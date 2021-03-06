@@ -1,4 +1,4 @@
-# node-plotly
+# node-plotly.js
 
 A simple wrapper around the [plotly.js](https://plotly.com/javascript/) graphing library to visualise data locally using node.js.
 
@@ -9,7 +9,7 @@ The API should be functionally identical to the [plotly.js](https://plotly.com/j
 ## Example
 
 ```js
-const { plot } = require("node-plotly");
+const { plot } = require("node-plotly.js");
 
 const trace1 = {
   x: [1, 2, 3, 4],

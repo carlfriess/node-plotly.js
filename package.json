@@ -1,17 +1,17 @@
 {
-  "name": "node-plotly",
+  "name": "node-plotly.js",
   "version": "0.0.0",
   "description": "Simple plotly.js wrapper to visualise data locally using node.js",
   "main": "plot.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/carlfriess/node-plotly.git"
+    "url": "git+https://github.com/carlfriess/node-plotly.js.git"
   },
   "author": "Carl Friess",
   "bugs": {
-    "url": "https://github.com/carlfriess/node-plotly/issues"
+    "url": "https://github.com/carlfriess/node-plotly.js/issues"
   },
-  "homepage": "https://github.com/carlfriess/node-plotly#readme",
+  "homepage": "https://github.com/carlfriess/node-plotly.js#readme",
   "dependencies": {
     "open": "^8.0.2"
   }
