@@ -1,5 +1,6 @@
 const http = require("http");
 const open = require("open");
+const presets = require("./presets");
 
 function html(data, layout) {
     const json = {
@@ -35,4 +36,4 @@ function plot(data, layout = {}) {
     });
 }
 
-module.exports = { plot, html };
+module.exports = { plot, html, presets };
