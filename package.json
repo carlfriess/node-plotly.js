@@ -1,6 +1,6 @@
 {
   "name": "node-plotly.js",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Simple plotly.js wrapper to visualise data locally using node.js",
   "main": "plot.js",
   "repository": {

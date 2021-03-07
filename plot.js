@@ -3,11 +3,20 @@ const open = require("open");
 const presets = require("./presets");
 
 function html(data, layout) {
+    const json = {
+        data: data,
+        layout: layout,
+        config: {
+            toImageButtonOptions: {
+                format: "svg",
+                filename: "plot",
+            },
+        },
+    };
     return `<html>
 <head>
     <title>Plot</title>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/downloadjs@^1.4.7/download.min.js"></script>
     <style type="text/css">
     ${ layout.css ? layout.css : "" }
     </style>
@@ -15,16 +24,7 @@ function html(data, layout) {
 <body>
     <div id="plot"></div>
     <script>
-Plotly.plot("plot", ${ JSON.stringify(data) }, ${ JSON.stringify(layout) }, {
-    modeBarButtonsToAdd: [{
-        name: 'Download plot as a svg',
-        icon: Plotly.Icons.disk,
-        click: (gd) => {
-            Plotly.toImage(gd, {format:"svg"}).then((img) => download(img, "plot.svg"));
-        }
-    }]
-});
-
+Plotly.plot("plot", ${ JSON.stringify(json) });
     </script>
 </body>
 </html>`;
