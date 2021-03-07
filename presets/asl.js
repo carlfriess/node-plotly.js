@@ -13,6 +13,7 @@ module.exports = {
             standoff: 0,
         },
         showgrid: false,
+        zeroline: false,
         linecolor: "#444444",
         ticks: "outside",
     },
