@@ -14,5 +14,13 @@
   "homepage": "https://github.com/carlfriess/node-plotly.js#readme",
   "dependencies": {
     "open": "^8.0.2"
-  }
+  },
+  "keywords": [
+    "graphing",
+    "plotting",
+    "data",
+    "visualization",
+    "plotly"
+  ],
+  "license": "MIT"
 }
